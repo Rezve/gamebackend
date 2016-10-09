@@ -11,8 +11,9 @@
 
 
                         <label for="Name"><h3>Gamename:</h3></label> <input name="gamename" type="text">
-
-
+                         
+                         <input type="hidden" name="level" value="Hard">
+                          
                         <h3>Question:</h3>
                     
                         <div>

@@ -27,11 +27,9 @@
                            <?php echo "<tr> <td value='id'> $d->id </td> <td value='name'> $d->name </td> <td value='edit'> <a href='#' >Edit</a> </td> <td value='destroy'> <a href='#'>Delete</a> </td> </tr>" ?>
 
                           @endforeach
-                           
+                         
                            </tbody>
                         </table>
-                       
-                          <p> {!! $d->name !!} </p>
 
                        
  

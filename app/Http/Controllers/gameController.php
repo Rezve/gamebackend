@@ -68,7 +68,7 @@ class gameController extends Controller
 
 
             $id = DB::table('games')->insertGetId(
-            array('name' => $input['gamename'], 'question' => json_encode($input['question']), 'answer' => json_encode($input['answer']), 'created_at' => Carbon::now() , 'updated_at' => Carbon::now() ));
+            array('name' => $input['gamename'], 'level' => $input['level'], 'question' => json_encode($input['question']), 'answer' => json_encode($input['answer']), 'created_at' => Carbon::now() , 'updated_at' => Carbon::now() ));
          
             // ///$game->name = $input['gamename'];
             // // $gmae->question = json_encode($input['question']);

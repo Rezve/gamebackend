@@ -25,11 +25,9 @@
                            <?php echo "<tr> <td value='id'> $d->id </td> <td value='name'> $d->name </td> <td value='edit'> <a href='#' >Edit</a> </td> <td value='destroy'> <a href='#'>Delete</a> </td> </tr>" ?>
 
                           <?php endforeach; $__env->popLoop(); $loop = $__env->getFirstLoop(); ?>
-                           
+                         
                            </tbody>
                         </table>
-                       
-                          <p> <?php echo $d->name; ?> </p>
 
                        
  
