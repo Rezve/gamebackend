@@ -20,3 +20,6 @@ Auth::routes();
 Route::get('/home', 'HomeController@index');
 
 Route::resource('game', 'gameController');
+
+
+Route::get('/api/games', 'gameController@api');

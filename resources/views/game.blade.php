@@ -18,14 +18,13 @@
                             <tr>
                              <th class="col-sm-2">ID</th>
                              <th class="col-sm-6">Name</th>
-                             <th class="col-sm-2">Edit</th>
+                             <th class="col-sm-2">View</th>
                              <th class="col-sm-2">Delete</th>
                             </tr>
                           </thead>
                           <tbody value='question'>
                           @foreach ($data as $d)
-                           <?php echo "<tr> <td value='id'> $d->id </td> <td value='name'> $d->name </td> <td value='edit'> <a href='#' >Edit</a> </td> <td value='destroy'> <a href='#'>Delete</a> </td> </tr>" ?>
-
+                           <tr> <td value='id'> {{$id++}} </td> <td value='name'> {{$d->name}} </td> <td value='view'> <a class="btn btn-info" href='{{ route('game.show', $d->id) }}' >View</a> </td> <td value='destroy'> {!! Form::open(['method' => 'DELETE','route' => ['game.destroy', $d->id]]) !!} {!! Form::submit('Delete', ['class' => 'btn btn-danger']) !!} </td></tr>  
                           @endforeach
                          
                            </tbody>

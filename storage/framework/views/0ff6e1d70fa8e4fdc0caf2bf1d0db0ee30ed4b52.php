@@ -43,7 +43,15 @@
 <body>
     <div id="app">
         <?php echo $__env->make('layouts.header', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+        <div class="container">
+        <?php if(Session::has('flash_message')): ?>
+            <div class="alert alert-success">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <?php echo e(Session::get('flash_message')); ?>
 
+            </div>
+        <?php endif; ?>
+        </div>
         <?php echo $__env->yieldContent('content'); ?>
     </div>
 

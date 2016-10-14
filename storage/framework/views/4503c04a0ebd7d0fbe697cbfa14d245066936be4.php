@@ -16,14 +16,13 @@
                             <tr>
                              <th class="col-sm-2">ID</th>
                              <th class="col-sm-6">Name</th>
-                             <th class="col-sm-2">Edit</th>
+                             <th class="col-sm-2">View</th>
                              <th class="col-sm-2">Delete</th>
                             </tr>
                           </thead>
                           <tbody value='question'>
                           <?php $__currentLoopData = $data; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $d): $__env->incrementLoopIndices(); $loop = $__env->getFirstLoop(); ?>
-                           <?php echo "<tr> <td value='id'> $d->id </td> <td value='name'> $d->name </td> <td value='edit'> <a href='#' >Edit</a> </td> <td value='destroy'> <a href='#'>Delete</a> </td> </tr>" ?>
-
+                           <tr> <td value='id'> <?php echo e($id++); ?> </td> <td value='name'> <?php echo e($d->name); ?> </td> <td value='view'> <a class="btn btn-info" href='<?php echo e(route('game.show', $d->id)); ?>' >View</a> </td> <td value='destroy'> <?php echo Form::open(['method' => 'DELETE','route' => ['game.destroy', $d->id]]); ?> <?php echo Form::submit('Delete', ['class' => 'btn btn-danger']); ?> </td></tr>  
                           <?php endforeach; $__env->popLoop(); $loop = $__env->getFirstLoop(); ?>
                          
                            </tbody>

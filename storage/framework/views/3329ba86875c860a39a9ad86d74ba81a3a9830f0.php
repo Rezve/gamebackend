@@ -1,5 +1,14 @@
 <?php $__env->startSection('content'); ?>
 <div class="container">
+<?php if($errors->any()): ?>
+    <div class="alert alert-danger">
+        <?php $__currentLoopData = $errors->all(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $error): $__env->incrementLoopIndices(); $loop = $__env->getFirstLoop(); ?>
+            <p><?php echo e($error); ?></p>
+        <?php endforeach; $__env->popLoop(); $loop = $__env->getFirstLoop(); ?>
+    </div>
+<?php endif; ?>
+</div>
+<div class="container">
     <div class="row">
         <div class="col-md-10 col-md-offset-2">
             <div class="panel panel-default">
@@ -10,7 +19,7 @@
                         <?php echo Form::open(['url' => 'game']); ?>
 
 
-                        <label for="Name"><h3>Gamename:</h3></label> <input name="gamename" type="text">
+                        <label for="Name"><h3>Gamename:</h3></label> <input name="name" type="text">
                          
                          <input type="hidden" name="level" value="Hard">
                           
@@ -38,8 +47,8 @@
                         <br/>
                         <h3>Answer:</h3>
                         <div>
-                        <table align="center">
-                          <tbody>
+                        <table class="gamecreation" align="center">
+                          <tbody  value='answer'>
                            <tr> <td value='00'><input type="text" name="answer[one][]" ></td> <td value='01'><input type="text" name="answer[one][]" ></td>  <td value='02'><input type="text" name="answer[one][]" ></td> <td value='03'><input type="text" name="answer[one][]" ></td> <td value='04'><input type="text" name="answer[one][]" ></td>  <td value='05'><input type="text" name="answer[one][]" ></td> <td value='06'><input type="text" name="answer[one][]" ></td> <td value='07'><input type="text" name="answer[one][]" ></td>  <td value='08'><input type="text" name="answer[one][]" ></td> </tr>
                            <tr> <td value='10'><input type="text" name="answer[two][]" ></td> <td value='11'><input type="text" name="answer[two][]" ></td>  <td value='02'><input type="text" name="answer[two][]" ></td> <td value='03'><input type="text" name="answer[two][]" ></td> <td value='04'><input type="text" name="answer[two][]" ></td>  <td value='05'><input type="text" name="answer[two][]" ></td> <td value='06'><input type="text" name="answer[two][]" ></td> <td value='07'><input type="text" name="answer[two][]" ></td>  <td value='08'><input type="text" name="answer[two][]" ></td> </tr>
                            <tr> <td value='20'><input type="text" name="answer[three][]" ></td> <td value='21'><input type="text" name="answer[three][]" ></td>  <td value='02'><input type="text" name="answer[three][]" ></td> <td value='03'><input type="text" name="answer[three][]" ></td> <td value='04'><input type="text" name="answer[three][]" ></td>  <td value='05'><input type="text" name="answer[three][]" ></td> <td value='06'><input type="text" name="answer[three][]" ></td> <td value='07'><input type="text" name="answer[three][]" ></td>  <td value='08'><input type="text" name="answer[three][]" ></td> </tr>

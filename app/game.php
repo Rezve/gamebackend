@@ -13,7 +13,7 @@ class game extends Model
         'answer' => 'json'
     ];
 
-    protected $fillable = ['name','question','answer'];
+    protected $fillable = ['name','question','answer','level'];
 
 
     public function user ()

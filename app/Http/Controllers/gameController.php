@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\game;
-use DB;
 use Carbon\Carbon;
 use Validator, Input, Redirect; 
 
@@ -14,14 +13,14 @@ class gameController extends Controller
 {
 
 
-	    /**
+        /**
      * Create a new controller instance.
      *
      * @return void
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        $this->middleware('auth', ['except' => ['api']]);
     }
 
     /**
@@ -31,13 +30,21 @@ class gameController extends Controller
      */
     public function index()
     {
-        $games = new game;
-        $data = $games->all();
-        return view('game',compact('data'));
+        $data = game::all();
+        $id = 1;
+        return view('game',compact('data','id'));
     }
 
+    public function show($id)
+    {
+        $game = game::findOrFail($id);
+
+        return view('gameshow')->withgame($game);
+    }
+
+    
     /**
-     * Show the application dashboard.
+     * Show the application create dashboard.
      *
      * @return \Illuminate\Http\Response
      */
@@ -47,14 +54,20 @@ class gameController extends Controller
 
     }
 
+   // API
+    public function api()
+    {
+            $games = game::all();
 
+            return response()->json($games);
+    }
 
 
     //
     public function store (Request $request) {
      
            $v = Validator::make($request->all(), [
-                'gamename' => 'required|min:5'
+                'name' => 'required'
             ]);
 
             if ($v->fails())
@@ -64,11 +77,13 @@ class gameController extends Controller
 
             $input = $request->all();
 
-            $game = new game;
+             game::create($input);
+
+            // $game = new game;
 
 
-            $id = DB::table('games')->insertGetId(
-            array('name' => $input['gamename'], 'level' => $input['level'], 'question' => json_encode($input['question']), 'answer' => json_encode($input['answer']), 'created_at' => Carbon::now() , 'updated_at' => Carbon::now() ));
+            // $id = DB::table('games')->insertGetId(
+            // array('name' => $input['gamename'], 'level' => $input['level'], 'question' => json_encode($input['question']), 'answer' => json_encode($input['answer']), 'created_at' => Carbon::now() , 'updated_at' => Carbon::now() ));
          
             // ///$game->name = $input['gamename'];
             // // $gmae->question = json_encode($input['question']);
@@ -79,6 +94,21 @@ class gameController extends Controller
             // // $game->answer = "['00'=>'2','01'=>'2','20'=>'2','21'=>'0','30'=>'blue']"
 
               
-             return view('game');
-	}
+
+            \Session::flash('flash_message', 'Game successfully added!');
+             return redirect()->route('game.index');
+    }
+
+
+
+    public function destroy($id)
+    {
+            $game = game::findOrFail($id);
+
+            $game->delete();
+
+            \Session::flash('flash_message', 'Game successfully deleted!');
+
+            return redirect()->route('game.index');
+    }
 }
