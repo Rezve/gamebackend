@@ -35,9 +35,18 @@ class gameController extends Controller
         return view('game',compact('data','id'));
     }
 
+     public function levelCreate($level)
+    {
+        $level = $level;
+
+        var_dump($level);
+        return view('gamecreate',compact('level'));
+    }
+
     public function show($id)
     {
         $game = game::findOrFail($id);
+        $game = json_decode($game);
 
         return view('gameshow')->withgame($game);
     }
@@ -50,7 +59,7 @@ class gameController extends Controller
      */
     public function create()
     {
-        return view('gamecreate');
+        return view('level');
 
     }
 

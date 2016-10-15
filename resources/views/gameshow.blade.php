@@ -13,40 +13,16 @@
                         <label for="Name"><h4>Gamename: {{$game->name}} </h4></label> 
                          
                          <lebel for="level"><h4>Level :  {{$game->level}} </h4></lebel>
+
+                      @if($game->level === "Expert" || $game->level === "Hard") 
                           
-                        <h3>Question:</h3>
-                    
-                        <div>
-                        <table class="gamecreation" align="center">
-                          <tbody value='question'>
-                           <tr> 
+                          @include('layouts.expert-hard')
 
-                           <td></td> 
+                      @elseif($game->level === "Medium")
 
-                           </tr>
-                           
-                           </tbody>
-                        </table>
+                          @include('layouts.medium')
 
-                        </div>
-
-
-                        <br/>
-                        <h3>Answer:</h3>
-                        <div>
-                        <table class="gamecreation" align="center">
-                          <tbody value='answer'>
-                           {{var_dump($game)}}
-
-
-
-                            <tr> <td></td> <td></td>  <td></td> <td></td> <td></td>  <td></td> <td></td> <td></td>  <td></td> </tr>
-                          
-
-                           </tbody>
-                        </table>
-
-                        </div>
+                      @endif
 
                         <br/>
 

@@ -23,3 +23,7 @@ table input[type="text"] {
 .gameshow tbody { border: none; }
 .gameshow td { border-bottom: solid thin; text-align: center; padding: 0em; }
 .gameshow th { border-bottom: solid thin; text-align: center; padding: 0em; }
+
+.gameview table { border-collapse: collapse; font-family: Roboto, Calibri, sans-serif; width:60%; }
+.gameview tbody { border: solid medium ; }
+.gameview td {  height: 2.4em; width: 2.4em; text-align: center; padding: 0em; border: solid thin ; }

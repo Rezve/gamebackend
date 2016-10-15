@@ -11,41 +11,14 @@
                         <label for="Name"><h4>Gamename: <?php echo e($game->name); ?> </h4></label> 
                          
                          <lebel for="level"><h4>Level :  <?php echo e($game->level); ?> </h4></lebel>
+
+                      <?php if($game->level === "Expert"): ?> 
                           
-                        <h3>Question:</h3>
-                    
-                        <div>
-                        <table class="gamecreation" align="center">
-                          <tbody value='question'>
-                           <tr> 
+                          <?php echo $__env->make('layouts.expert-hard', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 
-                           <td></td> 
+                      <?php elseif($game->level === "Hard"): ?>
 
-                           </tr>
-                           
-                           </tbody>
-                        </table>
-
-                        </div>
-
-
-                        <br/>
-                        <h3>Answer:</h3>
-                        <div>
-                        <table class="gamecreation" align="center">
-                          <tbody value='answer'>
-                           <?php echo e(var_dump($game)); ?>
-
-
-
-
-                            <tr> <td></td> <td></td>  <td></td> <td></td> <td></td>  <td></td> <td></td> <td></td>  <td></td> </tr>
-                          
-
-                           </tbody>
-                        </table>
-
-                        </div>
+                      <?php endif; ?>
 
                         <br/>
 

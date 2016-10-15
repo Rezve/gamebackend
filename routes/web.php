@@ -21,5 +21,7 @@ Route::get('/home', 'HomeController@index');
 
 Route::resource('game', 'gameController');
 
+Route::get('/game/{level}/create', 'gameController@levelCreate');
+
 
 Route::get('/api/games', 'gameController@api');

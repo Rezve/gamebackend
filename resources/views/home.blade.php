@@ -9,7 +9,7 @@
                 <div class="panel-heading">Welcome</div>
                 
                 <div class="panel-body">
-                    You are logged in!
+                    You are logged in! Go to game section for creating new games!
                 </div>
             </div>
         </div>
