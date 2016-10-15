@@ -3,7 +3,7 @@
     <div class="row">
         <div class="col-md-10 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">Gameboard
+                <div class="panel-heading" align="center">Gameboard   ::   Game View
                 </div>
 
                 <div class="panel-body">
@@ -12,11 +12,16 @@
                          
                          <lebel for="level"><h4>Level :  <?php echo e($game->level); ?> </h4></lebel>
 
-                      <?php if($game->level === "Expert"): ?> 
+                      <?php if($game->level === "Expert" || $game->level === "Hard"): ?> 
                           
                           <?php echo $__env->make('layouts.expert-hard', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 
-                      <?php elseif($game->level === "Hard"): ?>
+                      <?php elseif($game->level === "Medium" || $game->level === "Easy"): ?>
+
+                          <?php echo $__env->make('layouts.medium-easy', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+                      <?php else: ?>
+
+                          <?php echo $__env->make('layouts.beginner', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 
                       <?php endif; ?>
 

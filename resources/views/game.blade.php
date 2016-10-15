@@ -6,7 +6,7 @@
         <div class="col-md-10 col-md-offset-2">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    Gameboard <a class="nav navbar-nav navbar-right" style="padding-right:10px;" href="{{ url('/game/create') }}">Create</a>
+                    Gameboard   ::   List <a class="nav navbar-nav navbar-right" style="padding-right:10px;" href="{{ url('/game/create') }}">Create</a>
                 </div>
 
                 <div class="panel-body">

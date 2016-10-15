@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-md-10 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">Gameboard
+                <div class="panel-heading" align="center">Gameboard   ::   Game View
                 </div>
 
                 <div class="panel-body">
@@ -18,9 +18,12 @@
                           
                           @include('layouts.expert-hard')
 
-                      @elseif($game->level === "Medium")
+                      @elseif($game->level === "Medium" || $game->level === "Easy")
 
-                          @include('layouts.medium')
+                          @include('layouts.medium-easy')
+                      @else
+
+                          @include('layouts.beginner')
 
                       @endif
 
