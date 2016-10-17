@@ -1,4 +1,4 @@
-                        <h3>Question  : </h3>
+                        <h3>Question:</h3>
                     
                         <div>
                         <table class="gamecreation" align="center">
@@ -12,8 +12,6 @@
                            <tr> <td><input type="text" name="question[seven][]" ></td> <td><input type="text" name="question[seven][]" ></td>  <td><input type="text" name="question[seven][]" ></td> <td><input type="text" name="question[seven][]" ></td> <td><input type="text" name="question[seven][]" ></td>  <td><input type="text" name="question[seven][]" ></td> <td><input type="text" name="question[seven][]" ></td> <td><input type="text" name="question[seven][]" ></td>  <td><input type="text" name="question[seven][]" ></td> </tr>
                            <tr> <td><input type="text" name="question[eight][]" ></td> <td><input type="text" name="question[eight][]" ></td>  <td><input type="text" name="question[eight][]" ></td> <td><input type="text" name="question[eight][]" ></td> <td><input type="text" name="question[eight][]" ></td>  <td><input type="text" name="question[eight][]" ></td> <td><input type="text" name="question[eight][]" ></td> <td><input type="text" name="question[eight][]" ></td>  <td><input type="text" name="question[eight][]" ></td> </tr>
                            <tr> <td><input type="text" name="question[nine][]" ></td> <td><input type="text" name="question[nine][]" ></td>  <td><input type="text" name="question[nine][]" ></td> <td><input type="text" name="question[nine][]" ></td> <td><input type="text" name="question[nine][]" ></td>  <td><input type="text" name="question[nine][]" ></td> <td><input type="text" name="question[nine][]" ></td> <td><input type="text" name="question[nine][]" ></td>  <td><input type="text" name="question[nine][]" ></td> </tr>
-                           <tr> <td><input type="text" name="question[ten][]" ></td> <td><input type="text" name="question[ten][]" ></td>  <td><input type="text" name="question[ten][]" ></td> <td><input type="text" name="question[ten][]" ></td> <td><input type="text" name="question[ten][]" ></td>  <td><input type="text" name="question[ten][]" ></td> <td><input type="text" name="question[ten][]" ></td> <td><input type="text" name="question[ten][]" ></td>  <td><input type="text" name="question[ten][]" ></td> </tr>
-                           <tr> <td><input type="text" name="question[eleven][]" ></td> <td><input type="text" name="question[eleven][]" ></td>  <td><input type="text" name="question[eleven][]" ></td> <td><input type="text" name="question[eleven][]" ></td> <td><input type="text" name="question[eleven][]" ></td>  <td><input type="text" name="question[eleven][]" ></td> <td><input type="text" name="question[eleven][]" ></td> <td><input type="text" name="question[eleven][]" ></td>  <td><input type="text" name="question[eleven][]" ></td> </tr>
                            
                            </tbody>
                         </table>
@@ -22,7 +20,7 @@
 
 
                         <br/>
-                        <h3>Answer  : </h3>
+                        <h3>Answer:</h3>
                         <div>
                         <table class="gamecreation" align="center">
                           <tbody  value='answer'>
@@ -35,8 +33,6 @@
                            <tr> <td><input type="text" name="answer[seven][]" ></td> <td><input type="text" name="answer[seven][]" ></td>  <td><input type="text" name="answer[seven][]" ></td> <td><input type="text" name="answer[seven][]" ></td> <td><input type="text" name="answer[seven][]" ></td>  <td><input type="text" name="answer[seven][]" ></td> <td><input type="text" name="answer[seven][]" ></td> <td><input type="text" name="answer[seven][]" ></td>  <td><input type="text" name="answer[seven][]" ></td> </tr>
                            <tr> <td><input type="text" name="answer[eight][]" ></td> <td><input type="text" name="answer[eight][]" ></td>  <td><input type="text" name="answer[eight][]" ></td> <td><input type="text" name="answer[eight][]" ></td> <td><input type="text" name="answer[eight][]" ></td>  <td><input type="text" name="answer[eight][]" ></td> <td><input type="text" name="answer[eight][]" ></td> <td><input type="text" name="answer[eight][]" ></td>  <td><input type="text" name="answer[eight][]" ></td> </tr>
                            <tr> <td><input type="text" name="answer[nine][]" ></td> <td><input type="text" name="answer[nine][]" ></td>  <td><input type="text" name="answer[nine][]" ></td> <td><input type="text" name="answer[nine][]" ></td> <td><input type="text" name="answer[nine][]" ></td>  <td><input type="text" name="answer[nine][]" ></td> <td><input type="text" name="answer[nine][]" ></td> <td><input type="text" name="answer[nine][]" ></td>  <td><input type="text" name="answer[nine][]" ></td> </tr>
-                           <tr> <td><input type="text" name="answer[ten][]" ></td> <td><input type="text" name="answer[ten][]" ></td>  <td><input type="text" name="answer[ten][]" ></td> <td><input type="text" name="answer[ten][]" ></td> <td><input type="text" name="answer[ten][]" ></td>  <td><input type="text" name="answer[ten][]" ></td> <td><input type="text" name="answer[ten][]" ></td> <td><input type="text" name="answer[ten][]" ></td>  <td><input type="text" name="answer[ten][]" ></td> </tr>
-                           <tr> <td><input type="text" name="answer[eleven][]" ></td> <td><input type="text" name="answer[eleven][]" ></td>  <td><input type="text" name="answer[eleven][]" ></td> <td><input type="text" name="answer[eleven][]" ></td> <td><input type="text" name="answer[eleven][]" ></td>  <td><input type="text" name="answer[eleven][]" ></td> <td><input type="text" name="answer[eleven][]" ></td> <td><input type="text" name="answer[eleven][]" ></td>  <td><input type="text" name="answer[eleven][]" ></td> </tr>
                            
 
                            </tbody>

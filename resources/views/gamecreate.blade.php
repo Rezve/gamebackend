@@ -19,7 +19,7 @@
                 <div class="panel-body">
                         {!! Form::open(['url' => 'game']) !!}
 
-                        <label for="name"><h3>Gamename:</h3></label> <input name="name" type="text">
+                        <label for="name"><h3>Game Name  :  </h3></label> <input name="name" type="text">
                          
                          <input type="hidden" name="level" value="{{$level}}">
 

@@ -1,4 +1,4 @@
-                        <h3>Question:</h3>
+                        <h3>Question  : </h3>
                     
                         <div>
                         <table class="gamecreation" align="center">
@@ -20,7 +20,7 @@
 
 
                         <br/>
-                        <h3>Answer:</h3>
+                        <h3>Answer  : </h3>
                         <div>
                         <table class="gamecreation" align="center">
                           <tbody  value='answer'>

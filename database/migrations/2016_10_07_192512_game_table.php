@@ -18,8 +18,8 @@ class GameTable extends Migration
             $table->increments('id');
             $table->string('level');
             $table->string('name');
-            $table->json('question');
-            $table->json('answer');
+            $table->json('question')->nullable();
+            $table->json('answer')->nullable();
             $table->timestamps();
         });
     }

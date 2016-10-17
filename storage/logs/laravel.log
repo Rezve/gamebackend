@@ -1505,3 +1505,85 @@ Stack trace:
 #40 /home/hulk/Desktop/projects/game/public/index.php(53): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
 #41 /home/hulk/Desktop/projects/game/server.php(21): require_once('/home/hulk/Desk...')
 #42 {main}  
+[2016-10-16 06:28:13] production.ERROR: exception 'ErrorException' with message 'file_put_contents(/Users/hemel/Desktop/dev/gamebackend/bootstrap/cache/services.php): failed to open stream: No such file or directory' in /Users/hemel/Desktop/dev/gamebackend/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php:111
+Stack trace:
+#0 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'file_put_conten...', '/Users/hemel/De...', 111, Array)
+#1 /Users/hemel/Desktop/dev/gamebackend/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(111): file_put_contents('/Users/hemel/De...', '<?php return ar...', 0)
+#2 /Users/hemel/Desktop/dev/gamebackend/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(190): Illuminate\Filesystem\Filesystem->put('/Users/hemel/De...', '<?php return ar...')
+#3 /Users/hemel/Desktop/dev/gamebackend/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(135): Illuminate\Foundation\ProviderRepository->writeManifest(Array)
+#4 /Users/hemel/Desktop/dev/gamebackend/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(60): Illuminate\Foundation\ProviderRepository->compileManifest(Array)
+#5 /Users/hemel/Desktop/dev/gamebackend/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(540): Illuminate\Foundation\ProviderRepository->load(Array)
+#6 /Users/hemel/Desktop/dev/gamebackend/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\Foundation\Application->registerConfiguredProviders()
+#7 /Users/hemel/Desktop/dev/gamebackend/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(203): Illuminate\Foundation\Bootstrap\RegisterProviders->bootstrap(Object(Illuminate\Foundation\Application))
+#8 /Users/hemel/Desktop/dev/gamebackend/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(262): Illuminate\Foundation\Application->bootstrapWith(Array)
+#9 /Users/hemel/Desktop/dev/gamebackend/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(114): Illuminate\Foundation\Console\Kernel->bootstrap()
+#10 /Users/hemel/Desktop/dev/gamebackend/artisan(36): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 {main}  
+[2016-10-16 06:37:14] production.ERROR: exception 'ErrorException' with message 'file_put_contents(/Users/hemel/Desktop/dev/gamebackend/bootstrap/cache/services.php): failed to open stream: No such file or directory' in /Users/hemel/Desktop/dev/gamebackend/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php:111
+Stack trace:
+#0 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'file_put_conten...', '/Users/hemel/De...', 111, Array)
+#1 /Users/hemel/Desktop/dev/gamebackend/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(111): file_put_contents('/Users/hemel/De...', '<?php return ar...', 0)
+#2 /Users/hemel/Desktop/dev/gamebackend/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(190): Illuminate\Filesystem\Filesystem->put('/Users/hemel/De...', '<?php return ar...')
+#3 /Users/hemel/Desktop/dev/gamebackend/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(135): Illuminate\Foundation\ProviderRepository->writeManifest(Array)
+#4 /Users/hemel/Desktop/dev/gamebackend/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(60): Illuminate\Foundation\ProviderRepository->compileManifest(Array)
+#5 /Users/hemel/Desktop/dev/gamebackend/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(540): Illuminate\Foundation\ProviderRepository->load(Array)
+#6 /Users/hemel/Desktop/dev/gamebackend/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\Foundation\Application->registerConfiguredProviders()
+#7 /Users/hemel/Desktop/dev/gamebackend/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(203): Illuminate\Foundation\Bootstrap\RegisterProviders->bootstrap(Object(Illuminate\Foundation\Application))
+#8 /Users/hemel/Desktop/dev/gamebackend/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(262): Illuminate\Foundation\Application->bootstrapWith(Array)
+#9 /Users/hemel/Desktop/dev/gamebackend/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(114): Illuminate\Foundation\Console\Kernel->bootstrap()
+#10 /Users/hemel/Desktop/dev/gamebackend/artisan(36): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 {main}  
+[2016-10-16 06:43:20] production.ERROR: exception 'RuntimeException' with message 'The only supported ciphers are AES-128-CBC and AES-256-CBC with the correct key lengths.' in /Users/hemel/Desktop/dev/gamebackend/bootstrap/cache/compiled.php:13238
+Stack trace:
+#0 /Users/hemel/Desktop/dev/gamebackend/bootstrap/cache/compiled.php(7723): Illuminate\Encryption\Encrypter->__construct(NULL, 'AES-256-CBC')
+#1 /Users/hemel/Desktop/dev/gamebackend/bootstrap/cache/compiled.php(1374): Illuminate\Encryption\EncryptionServiceProvider->Illuminate\Encryption\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 /Users/hemel/Desktop/dev/gamebackend/bootstrap/cache/compiled.php(1330): Illuminate\Container\Container->build(Object(Closure), Array)
+#3 /Users/hemel/Desktop/dev/gamebackend/bootstrap/cache/compiled.php(1908): Illuminate\Container\Container->make('encrypter', Array)
+#4 /Users/hemel/Desktop/dev/gamebackend/bootstrap/cache/compiled.php(1431): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#5 /Users/hemel/Desktop/dev/gamebackend/bootstrap/cache/compiled.php(1408): Illuminate\Container\Container->resolveClass(Object(ReflectionParameter))
+#6 /Users/hemel/Desktop/dev/gamebackend/bootstrap/cache/compiled.php(1394): Illuminate\Container\Container->getDependencies(Array, Array)
+#7 /Users/hemel/Desktop/dev/gamebackend/bootstrap/cache/compiled.php(1330): Illuminate\Container\Container->build('App\\Http\\Middle...', Array)
+#8 /Users/hemel/Desktop/dev/gamebackend/bootstrap/cache/compiled.php(1908): Illuminate\Container\Container->make('App\\Http\\Middle...', Array)
+#9 /Users/hemel/Desktop/dev/gamebackend/bootstrap/cache/compiled.php(9865): Illuminate\Foundation\Application->make('App\\Http\\Middle...')
+#10 /Users/hemel/Desktop/dev/gamebackend/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(33): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#11 /Users/hemel/Desktop/dev/gamebackend/bootstrap/cache/compiled.php(9855): Illuminate\Routing\Pipeline->Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#12 /Users/hemel/Desktop/dev/gamebackend/bootstrap/cache/compiled.php(8148): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#13 /Users/hemel/Desktop/dev/gamebackend/bootstrap/cache/compiled.php(8139): Illuminate\Routing\Router->runRouteWithinStack(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request))
+#14 /Users/hemel/Desktop/dev/gamebackend/bootstrap/cache/compiled.php(8130): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#15 /Users/hemel/Desktop/dev/gamebackend/bootstrap/cache/compiled.php(2472): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 /Users/hemel/Desktop/dev/gamebackend/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\Foundation\Http\Kernel->Illuminate\Foundation\Http\{closure}(Object(Illuminate\Http\Request))
+#17 /Users/hemel/Desktop/dev/gamebackend/bootstrap/cache/compiled.php(3213): Illuminate\Routing\Pipeline->Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#18 /Users/hemel/Desktop/dev/gamebackend/bootstrap/cache/compiled.php(9870): Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode->handle(Object(Illuminate\Http\Request), Object(Closure))
+#19 /Users/hemel/Desktop/dev/gamebackend/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(33): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#20 /Users/hemel/Desktop/dev/gamebackend/bootstrap/cache/compiled.php(9855): Illuminate\Routing\Pipeline->Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#21 /Users/hemel/Desktop/dev/gamebackend/bootstrap/cache/compiled.php(2416): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#22 /Users/hemel/Desktop/dev/gamebackend/bootstrap/cache/compiled.php(2400): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#23 /Users/hemel/Desktop/dev/gamebackend/public/index.php(54): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#24 /Users/hemel/Desktop/dev/gamebackend/server.php(21): require_once('/Users/hemel/De...')
+#25 {main}  
+[2016-10-16 06:43:20] production.ERROR: exception 'RuntimeException' with message 'The only supported ciphers are AES-128-CBC and AES-256-CBC with the correct key lengths.' in /Users/hemel/Desktop/dev/gamebackend/bootstrap/cache/compiled.php:13238
+Stack trace:
+#0 /Users/hemel/Desktop/dev/gamebackend/bootstrap/cache/compiled.php(7723): Illuminate\Encryption\Encrypter->__construct(NULL, 'AES-256-CBC')
+#1 /Users/hemel/Desktop/dev/gamebackend/bootstrap/cache/compiled.php(1374): Illuminate\Encryption\EncryptionServiceProvider->Illuminate\Encryption\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 /Users/hemel/Desktop/dev/gamebackend/bootstrap/cache/compiled.php(1330): Illuminate\Container\Container->build(Object(Closure), Array)
+#3 /Users/hemel/Desktop/dev/gamebackend/bootstrap/cache/compiled.php(1908): Illuminate\Container\Container->make('encrypter', Array)
+#4 /Users/hemel/Desktop/dev/gamebackend/bootstrap/cache/compiled.php(1431): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#5 /Users/hemel/Desktop/dev/gamebackend/bootstrap/cache/compiled.php(1408): Illuminate\Container\Container->resolveClass(Object(ReflectionParameter))
+#6 /Users/hemel/Desktop/dev/gamebackend/bootstrap/cache/compiled.php(1394): Illuminate\Container\Container->getDependencies(Array, Array)
+#7 /Users/hemel/Desktop/dev/gamebackend/bootstrap/cache/compiled.php(1330): Illuminate\Container\Container->build('App\\Http\\Middle...', Array)
+#8 /Users/hemel/Desktop/dev/gamebackend/bootstrap/cache/compiled.php(1908): Illuminate\Container\Container->make('App\\Http\\Middle...', Array)
+#9 /Users/hemel/Desktop/dev/gamebackend/bootstrap/cache/compiled.php(2426): Illuminate\Foundation\Application->make('App\\Http\\Middle...')
+#10 /Users/hemel/Desktop/dev/gamebackend/public/index.php(58): Illuminate\Foundation\Http\Kernel->terminate(Object(Illuminate\Http\Request), Object(Illuminate\Http\Response))
+#11 /Users/hemel/Desktop/dev/gamebackend/server.php(21): require_once('/Users/hemel/De...')
+#12 {main}  
+[2016-10-16 11:04:10] local.ERROR: exception 'Symfony\Component\Console\Exception\CommandNotFoundException' with message 'There are no commands defined in the "route:" namespace.
+
+Did you mean this?
+    route' in /Users/hemel/Desktop/dev/gamebackend/vendor/symfony/console/Application.php:490
+Stack trace:
+#0 /Users/hemel/Desktop/dev/gamebackend/vendor/symfony/console/Application.php(522): Symfony\Component\Console\Application->findNamespace('route:')
+#1 /Users/hemel/Desktop/dev/gamebackend/vendor/symfony/console/Application.php(184): Symfony\Component\Console\Application->find('route::list')
+#2 /Users/hemel/Desktop/dev/gamebackend/vendor/symfony/console/Application.php(118): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 /Users/hemel/Desktop/dev/gamebackend/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 /Users/hemel/Desktop/dev/gamebackend/artisan(36): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 {main}  
