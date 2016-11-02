@@ -48,7 +48,7 @@ return [
 
         'sqlite' => [
             'driver' => 'sqlite',
-            'database' => env('DB_DATABASE', database_path('database/db/game.sqlite')),
+            'database' => database_path('game.sqlite'),
             'prefix' => '',
         ],
 
