@@ -27,6 +27,14 @@
 
                         <br/>
 
+                        <br/>
+
+                        <div align="center">
+                          <a class="btn btn-info" href='<?php echo e(route('game.edit', $game->id)); ?>' >Edit</a>
+                        </div>
+
+                        <br/>
+
                         <div align="center">
                           <?php echo Form::open(['method' => 'DELETE','route' => ['game.destroy', $game->id]]); ?> <?php echo Form::submit('Delete', ['class' => 'btn btn-danger']); ?> 
                         </div>

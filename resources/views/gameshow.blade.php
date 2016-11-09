@@ -29,6 +29,14 @@
 
                         <br/>
 
+                        <br/>
+
+                        <div align="center">
+                          <a class="btn btn-info" href='{{ route('game.edit', $game->id) }}' >Edit</a>
+                        </div>
+
+                        <br/>
+
                         <div align="center">
                           {!! Form::open(['method' => 'DELETE','route' => ['game.destroy', $game->id]]) !!} {!! Form::submit('Delete', ['class' => 'btn btn-danger']) !!} 
                         </div>

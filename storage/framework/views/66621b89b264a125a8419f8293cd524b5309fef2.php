@@ -40,6 +40,16 @@
                               <td><?php echo e($value); ?></td>
                            <?php endforeach; $__env->popLoop(); $loop = $__env->getFirstLoop(); ?>
                            </tr>
+                           <tr>
+                           <?php $__currentLoopData = $game->question->eight; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $key => $value): $__env->incrementLoopIndices(); $loop = $__env->getFirstLoop(); ?>
+                              <td><?php echo e($value); ?></td>
+                           <?php endforeach; $__env->popLoop(); $loop = $__env->getFirstLoop(); ?>
+                           </tr>
+                           <tr>
+                           <?php $__currentLoopData = $game->question->nine; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $key => $value): $__env->incrementLoopIndices(); $loop = $__env->getFirstLoop(); ?>
+                              <td><?php echo e($value); ?></td>
+                           <?php endforeach; $__env->popLoop(); $loop = $__env->getFirstLoop(); ?>
+                           </tr>
                            
                            </tbody>
                         </table>
@@ -83,6 +93,16 @@
                            </tr>
                            <tr>
                            <?php $__currentLoopData = $game->answer->seven; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $key => $value): $__env->incrementLoopIndices(); $loop = $__env->getFirstLoop(); ?>
+                              <td><?php echo e($value); ?></td>
+                           <?php endforeach; $__env->popLoop(); $loop = $__env->getFirstLoop(); ?>
+                           </tr>
+                           <tr>
+                           <?php $__currentLoopData = $game->answer->eight; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $key => $value): $__env->incrementLoopIndices(); $loop = $__env->getFirstLoop(); ?>
+                              <td><?php echo e($value); ?></td>
+                           <?php endforeach; $__env->popLoop(); $loop = $__env->getFirstLoop(); ?>
+                           </tr>
+                           <tr>
+                           <?php $__currentLoopData = $game->answer->nine; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $key => $value): $__env->incrementLoopIndices(); $loop = $__env->getFirstLoop(); ?>
                               <td><?php echo e($value); ?></td>
                            <?php endforeach; $__env->popLoop(); $loop = $__env->getFirstLoop(); ?>
                            </tr>
