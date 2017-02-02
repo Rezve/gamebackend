@@ -20,7 +20,7 @@ class gameController extends Controller
 
     public function index()
     {
-        $data = game::all();
+        $data = game::paginate(15);
         $id = 1;
         return view('game',compact('data','id'));
     }

@@ -28,7 +28,7 @@
                            </tbody>
                         </table>
 
-                       
+                    {{ $data->links() }}
  
 
                 </div>
