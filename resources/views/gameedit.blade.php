@@ -45,7 +45,7 @@
 
                                <tr>
                                @foreach($game->question[$rows[$i]] as  $key => $value)
-                                   <td><input type="text" name="question[{{$rows[$i]}}][]"  value="{{ $value }} "></td>
+                                   <td><input type="text" name="question[{{$rows[$i]}}][]"  value="{{ trim($value) }}"></td>
                                @endforeach
                                </tr>
                                
@@ -66,7 +66,7 @@
 
                                <tr>
                                @foreach($game->answer[$rows[$i]] as  $key => $value)
-                                   <td><input type="text" name="answer[{{$rows[$i]}}][]"  value="{{ $value }} "></td>
+                                   <td><input type="text" name="answer[{{$rows[$i]}}][]"  value="{{ trim($value) }}"></td>
                                @endforeach
                                </tr>
                                
